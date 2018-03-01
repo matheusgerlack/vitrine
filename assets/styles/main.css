@@ -1,0 +1,245 @@
+/* white blue : #EFF7FE */
+/* contour blue: #BDD0E0 */
+/* dark blue : #006699 */
+/* red: #CC0000 */
+/* white grey: #EEE */
+
+
+/* common */
+*{
+	font-size: 12px;
+	box-sizing:border-box;
+}
+
+a{
+	color: black;	
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+ul{
+	margin: 0;
+	padding: 1em 3em;
+}
+
+li{
+	list-style-type: none;
+	transition: .5s ease all;
+}
+
+li:hover{
+	background: linear-gradient(to bottom, #EFF7FE, #fff);
+}
+
+li:hover .image{
+	border: 2px solid #BDD0E0;
+}
+
+/*grid*/
+
+.flex{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.col-30{
+	flex-basis: 30%	;
+}
+
+.col-70{
+	flex-basis: 70%;
+}
+
+@media only screen and (max-width: 580px) {
+    .col-30{
+    	flex-basis: 100%	;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .col-70{
+    	flex-basis: 100%;
+    }
+}
+/* end common*/
+
+
+
+.advice{
+	display: block;
+	background: linear-gradient(to bottom, #EFF7FE, #E5F1FB);
+	font-size: 20px;
+	color: #006699;
+	padding: .5em 1em;
+}
+
+.l{
+	border-radius: 15px 0 0 0;
+}
+
+@media only screen and (max-width: 580px) {
+    .l{
+    	border-radius: 15px 15px 0 0;
+    }
+}
+
+.r{
+	border-radius: 0 15px 0 0;
+}
+
+@media only screen and (max-width: 580px) {
+    .r{
+    	border-radius:0;
+    }
+}
+
+#vitrine{
+	border-radius: 15px;
+	box-shadow: 2px 2px 1px #d8d8d8;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#references{
+	border-right: 1px solid #eee;
+	padding: 1em;
+}
+
+#recommendations{
+	padding-top: 1em;
+}
+
+.recommendation{
+	width: 30%;
+	display: inline-block;
+}
+
+.product{
+	padding: .5em;
+}
+
+.image{
+	width: 100%;
+    height: auto;
+    background-color: white;
+    display: block;
+    border: 2px solid white;
+    margin-bottom: 5px;
+}
+
+.image img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%; 
+}
+
+.description{
+	padding: 1em 0;
+}
+
+.regular{
+	display: block;
+	padding: 5px 0;
+}
+
+.sale{
+	font-size: 16px;
+	color: #CC0000;
+	font-weight: bold;
+	display: block;
+}
+
+.installment{
+	color: #CC0000;
+	font-weight: bold;
+}
+
+.installment span{
+	font-weight: normal;
+	display: block;
+}
+
+#footer{
+	margin-top: 2em;
+	height: 20px;
+	width: 100%;
+	background: linear-gradient(to top, #EFF7FE, #E5F1FB);
+	border-radius: 0 0 15px 15px;
+}
+
+
+
+/* SLIDER */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slide {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 18px;
+  transition: 0.6s ease;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position-x: 50%; 
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  background-image: url('../images/right.png');
+}
+
+.prev {
+  background-image: url('../images/left.png');
+  left: 0;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.next:hover {
+  background-image: url('../images/right-active.png');
+}
+
+.prev:hover {
+  background-image: url('../images/left-active.png');
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
